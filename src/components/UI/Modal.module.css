@@ -53,33 +53,32 @@
   align-items: center;
 }
 
-.modal .btn {
+/* .modal .btn {
   padding: 1.2rem 3rem;
   border: 0.2rem solid #0c007c;
   font-size: 1.5rem;
   font-weight: 600;
-}
+} */
 
-.modal .btn:hover {
+/* .modal .btn:hover {
   border: 0.2rem solid #007aba;
   background: #007aba;
-}
+} */
 
-#btn__no {
+/* #btn__no {
   background: transparent;
   border: 0.1rem solid #0c007c;
   color: #0c007c;
   font-weight: bolder;
-}
+} */
 
-#btn__no:hover
-/* ,
-.modal .btn:hover */ {
+/* #btn__no:hover
+ {
   color: #007aba;
   border: 0.1rem solid #007aba;
 
   background: #e6e6e6;
-}
+} */
 
 @media (max-width: 1024px) {
   html {

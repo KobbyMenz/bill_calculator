@@ -61,9 +61,7 @@ const ModalOverlay = (props) => {
       </div>
 
       <div className={classes.btn_container}>
-        <Button className={classes.btn} onClick={props.onCloseModal}>
-          Okay
-        </Button>
+        <Button onClick={props.onCloseModal}>Okay</Button>
       </div>
     </Card>
   );
