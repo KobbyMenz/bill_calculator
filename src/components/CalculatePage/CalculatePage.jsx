@@ -193,7 +193,7 @@ const CalculatePage = () => {
       <Card className="input">
         <h2>Bill Calculator</h2>
         <div className="img_btn_container">
-          <img  src={Logo} alt="logo" />
+          <img src={Logo} alt="logo" />
 
           <div className="addUserBtn">
             <Button className="btn" onClick={showAddModalHandler}>
@@ -261,10 +261,9 @@ const CalculatePage = () => {
         </table>
 
         <footer className="footer">
-          {" "}
           <p>
             Developed by <span>Kobby-Menz </span>
-            Technologies
+            Tech Solutions
           </p>
         </footer>
       </Card>

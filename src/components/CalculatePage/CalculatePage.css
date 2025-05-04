@@ -1,3 +1,6 @@
+h2{
+  color: #161616;
+}
 .input {
   margin: 0rem auto;
   padding: 1rem 2rem;
@@ -146,6 +149,7 @@ tfoot {
 
 .footer p {
   font-size: 1.4rem;
+  color: #161616;
 }
 
 .footer p span {
