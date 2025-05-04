@@ -1,0 +1,222 @@
+.input {
+  margin: 0rem auto;
+  padding: 1rem 2rem;
+  width: 100%;
+  max-width: 60.5rem;
+  /* margin-top: 8rem; */
+  margin-bottom: 1rem;
+  /* background: rgba(206, 206, 206, 0.226);
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem); */
+  border: 0.1rem solid #fff;
+}
+
+/* .form_control {
+    display: flex;
+    flex-direction: column;
+} */
+
+.form_control input {
+  font-weight: 500;
+  font-size: 1.8rem;
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 0 auto 1.8rem auto;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: #000;
+}
+
+.form_control input:focus {
+  border: 1px solid #0c007c;
+}
+
+.form_control label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+}
+
+.img_btn_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.4rem 0;
+}
+
+.img_btn_container img {
+  width: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  /* box-shadow: 0rem 0.2rem 1rem rgba(0, 0, 0, 0.25); */
+  /* height: 4rem; */
+}
+
+.btn {
+  /* margin: 1rem 0; */
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.share_btn {
+  margin: 1.8rem 0;
+}
+
+.addUserBtn {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: right;
+  gap: 0.8rem;
+}
+
+.remove_btn {
+  position: absolute;
+
+  right: 0.5rem;
+  transform: translateY(-38.5%);
+  /* background: #ca0202;
+  border-radius: 50%;
+  padding: 1rem; */
+}
+
+.remove_btn svg {
+  width: 2rem;
+  height: 2rem;
+  color: #ca0202;
+}
+
+/* .remove_btn {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.remove_btn svg:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.table_title {
+  display: flex;
+  color: #000;
+  justify-content: space-between;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: auto;
+  position: relative;
+  text-align: left;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+table tr {
+  position: relative;
+  border-bottom: 0.1rem solid #ccc;
+  transition: 0.2s ease-in-out;
+}
+
+table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+table tbody tr:hover {
+  background: #eee;
+  transition: 0.2s ease-in-out;
+}
+
+table th,
+td,
+.table_title {
+  padding: 1.2rem 1.2rem;
+  font-size: 1.8rem;
+}
+
+thead,
+tfoot {
+  font-weight: 700;
+  border-bottom: 0.2rem solid #161616;
+  border-top: 0.2rem solid #161616;
+}
+
+.footer p {
+  font-size: 1.4rem;
+}
+
+.footer p span {
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 53%;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 53%;
+  }
+
+  .input {
+    max-width: 80.5rem;
+    padding: 1rem 5%;
+  }
+}
+
+@media (max-width: 834px) {
+  html {
+    font-size: 53%;
+  }
+
+  /* .top__container {
+      flex-direction: column-reverse;
+    } */
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 52%;
+  }
+
+  body {
+    padding: 1rem 0rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    padding: 1rem 0rem;
+  }
+}
+
+@media (max-width: 414px) {
+  html {
+    font-size: 48%;
+  }
+
+  /* .product_table {
+      max-width: 28rem;
+      width: 100%;
+    } */
+}
+
+@media (max-width: 314px) {
+  html {
+    font-size: 48%;
+  }
+
+  /* .product_table {
+      max-width: 28rem;
+      width: 100%;
+    } */
+}

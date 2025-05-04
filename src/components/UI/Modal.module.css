@@ -1,0 +1,153 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 102;
+  background: rgba(0, 0, 0, 0.582);
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
+}
+
+.modal {
+  position: fixed;
+  top: 40vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  max-width: 40rem;
+  z-index: 105;
+  overflow: hidden;
+}
+
+.modal header {
+  background: #0c007c;
+  color: #fff;
+  padding: 1rem 1.8rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.modal .content {
+  padding: 1rem 1.8rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.modal .content p {
+  color: #020202;
+}
+
+.modal .content svg {
+  color: orange;
+  width: 8rem;
+  height: 8rem;
+}
+
+.modal .btn_container {
+  margin: 1rem 0 1.8rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.modal .btn {
+  padding: 1.2rem 3rem;
+  border: 0.2rem solid #0c007c;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.modal .btn:hover {
+  border: 0.2rem solid #007aba;
+  background: #007aba;
+}
+
+#btn__no {
+  background: transparent;
+  border: 0.1rem solid #0c007c;
+  color: #0c007c;
+  font-weight: bolder;
+}
+
+#btn__no:hover
+/* ,
+.modal .btn:hover */ {
+  color: #007aba;
+  border: 0.1rem solid #007aba;
+
+  background: #e6e6e6;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 53%;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 53%;
+  }
+
+  .modal {
+    max-width: 60rem;
+    width: 50%;
+  }
+}
+
+@media (max-width: 834px) {
+  html {
+    font-size: 53%;
+  }
+
+  /* .top__container {
+      flex-direction: column-reverse;
+    } */
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 52%;
+  }
+
+  .modal {
+    max-width: 46rem;
+    width: 85%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .modal {
+    max-width: 46rem;
+    width: 82%;
+  }
+}
+
+@media (max-width: 414px) {
+  html {
+    font-size: 48%;
+  }
+
+  /* .product_table {
+      max-width: 28rem;
+      width: 100%;
+    } */
+}
+
+@media (max-width: 314px) {
+  html {
+    font-size: 48%;
+  }
+
+  /* .product_table {
+      max-width: 28rem;
+      width: 100%;
+    } */
+}

@@ -1,0 +1,128 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.582);
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
+}
+
+.modal {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  max-width: 60rem;
+  z-index: 105;
+  overflow: hidden;
+}
+
+.modal header {
+  background: #0c007c;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal header .close_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem 0.4rem;
+  border-radius: 0.5rem;
+}
+
+.modal header .close_btn svg {
+  width: 2rem;
+}
+
+.modal header .close_btn:hover {
+  background: #fff;
+  cursor: pointer;
+ 
+}
+
+.modal header .close_btn:hover svg {
+  color: red;
+}
+
+.modal .content {
+  padding: 1rem 4rem;
+  /* text-align: center; */
+  font-size: 1.6rem;
+}
+
+.modal .content p {
+  color: #020202;
+}
+
+.modal .btn_container {
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  justify-content: space-around;
+  /* gap: 2rem; */
+  align-items: center;
+}
+
+/* .modal .btn, #btn__no {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.modal .btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 0.8rem 2.5rem;
+  border: 0.2rem solid #0c007c;
+}
+
+.modal .btn:hover {
+  /* padding: 1.2rem 3rem; */
+  border: 0.2rem solid #007aba;
+}
+
+#btn__no {
+  background: transparent;
+  border: 0.1rem solid #0c007c;
+  color: #0c007c;
+  font-weight: bolder;
+}
+
+#btn__no svg {
+  color: #0c007c;
+}
+
+#btn__no:hover svg {
+  color: #007aba;
+}
+
+#btn__no:hover {
+  color: #007aba;
+  border: 0.1rem solid #007aba;
+  /* border: 0.2rem solid #045e2b;
+    padding: 1rem 3rem; */
+  background: #dbdbdb6c;
+}
+
+.btn_container .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn_container .btn svg {
+  width: 2rem;
+}
+
+

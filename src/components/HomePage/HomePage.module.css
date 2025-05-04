@@ -1,0 +1,23 @@
+/* .input {
+  margin: 2rem auto;
+  padding: 3rem 6rem;
+  width: 50%;
+  max-width: 50.5rem;
+  margin-top: 8rem;
+  margin-bottom: 7rem;
+  background: rgba(206, 206, 206, 0.226);
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
+  border: 0.1rem solid #fff;
+} */
+
+.card {
+  margin: 0rem auto;
+  padding:1rem 2rem 4rem 2rem;
+  width: 50%;
+  max-width: 50.5rem;
+}
+
+.message {
+  margin-bottom: 1rem;
+}
