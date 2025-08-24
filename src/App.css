@@ -18,6 +18,12 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.Toastify__toast {
+  font-size: 1.5rem; /* Change font size globally */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to toast */
+  color: black;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

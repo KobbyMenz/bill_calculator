@@ -23,7 +23,6 @@
   border: none;
   text-decoration: none;
   scrollbar-width: thin;
-  
 }
 
 html {
@@ -40,6 +39,21 @@ body {
   background: #eee;
   height: 100vh;
 }
+
+/*======== Toast Notification styles starts =========*/
+.Toastify__close-button {
+  color: var(--text-color); /* the “X” color */
+  opacity: 1; /* ensure it’s visible */
+}
+
+.Toastify__close-button > svg {
+  fill: var(--text-color);
+}
+
+.Toastify__close-button > svg:hover {
+  fill: #ff0000; /* change color on hover */
+}
+/*======== Toast Notification styles ends =========*/
 
 /* a {
   font-weight: 500;

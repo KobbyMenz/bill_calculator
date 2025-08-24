@@ -5,7 +5,7 @@ import classes from "../Input/AddModal.module.css";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
 import "../CalculatePage/CalculatePage.css";
-import OkayIcon from "../UI/OkayIcon";
+//import OkayIcon from "../UI/OkayIcon";
 import Modal from "../UI/Modal";
 //import ErrorIcon from "./ErrorIcon";
 
@@ -46,11 +46,12 @@ const AddModal = (props) => {
       ];
     });
 
-    props.setShowModal({
-      title: " Message",
-      icon: <OkayIcon />,
-      message: "Points added successfully",
-    });
+    props.onToast("success", "Points added successfully");
+    // props.setShowModal({
+    //   title: " Message",
+    //   icon: <OkayIcon />,
+    //   message: "Points added successfully",
+    // });
 
     props.onCloseModal();
 
@@ -168,7 +169,7 @@ AddModal.propTypes = {
   title: PropTypes.string,
   message: PropTypes.string,
   showModal: PropTypes.bool,
-  setShowModal: PropTypes.func,
+  onToast: PropTypes.func,
   namePlaceholder: PropTypes.string,
   pointsPlaceholder: PropTypes.string,
   setUserFormData: PropTypes.func,

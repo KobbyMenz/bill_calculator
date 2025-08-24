@@ -5,9 +5,12 @@ import "./CalculatePage.css";
 import AddModal from "../Input/AddModal";
 import Modal from "../UI/Modal";
 import FormatCurrency from "../Functions/FormatCurrency";
-import ErrorIcon from "../UI/ErrorIcon";
-import OkayIcon from "../UI/OkayIcon";
+//import ErrorIcon from "../UI/ErrorIcon";
+//import OkayIcon from "../UI/OkayIcon";
 import Logo from "../../assets/images/KMZ.jpg";
+import Toast from "../UI/Notification/toast";
+
+//import "react-toastify/dist/ReactToastify.css";
 
 const CalculatePage = () => {
   const [showModal, setShowModal] = useState(false);
@@ -49,6 +52,10 @@ const CalculatePage = () => {
     return cartItem.reduce((acc, item) => acc + +item.amountPayable, 0);
   };
 
+  const toastModalHandler = (type, message) => {
+    Toast(type, message);
+  };
+
   useEffect(() => {
     setTotalPoints(calculateTotalPoints(userData));
     setTotalAmount(calculateTotalAmount(userData));
@@ -59,11 +66,11 @@ const CalculatePage = () => {
     e.preventDefault();
 
     if (userData.length === 0) {
-      setShowModal({
-        title: "Error Message",
-        icon: <ErrorIcon />,
-        message: `Click on "add points" button to add new points for calculation`,
-      });
+      Toast(
+        "error",
+        "Click on 'Add Points' button to add new points for calculation"
+      );
+
       return;
     }
 
@@ -90,11 +97,7 @@ const CalculatePage = () => {
       };
     });
 
-    setShowModal({
-      title: "Message",
-      icon: <OkayIcon />,
-      message: "Bill shared successfully",
-    });
+    Toast("success", "Bill shared successfully");
   };
 
   const deleteHandler = (id) => {
@@ -184,7 +187,7 @@ const CalculatePage = () => {
       {showAddModal && (
         <AddModal
           setUserFormData={setUserData}
-          setShowModal={setShowModal}
+          onToast={toastModalHandler}
           showModal={showModal}
           setRefetch={setRender}
           onCloseModal={closeShowAddModalHandler}
@@ -225,10 +228,10 @@ const CalculatePage = () => {
           </div>
 
           <div className="form_control">
-            <div className="share_btn">
-              {" "}
-              <Button className="btn">Share Bill</Button>
-            </div>
+            <Button className="btn">Share Bill</Button>
+            {/* <div className="share_btn">
+              
+            </div> */}
           </div>
         </form>
       </Card>
