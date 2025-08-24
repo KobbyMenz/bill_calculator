@@ -3,7 +3,7 @@ import Button from "../UI/Button";
 import Card from "../UI/Card";
 import "./CalculatePage.css";
 import AddModal from "../Input/AddModal";
-import Modal from "../UI/Modal";
+//import Modal from "../UI/Modal";
 import FormatCurrency from "../Functions/FormatCurrency";
 //import ErrorIcon from "../UI/ErrorIcon";
 //import OkayIcon from "../UI/OkayIcon";
@@ -13,7 +13,7 @@ import Toast from "../UI/Notification/toast";
 //import "react-toastify/dist/ReactToastify.css";
 
 const CalculatePage = () => {
-  const [showModal, setShowModal] = useState(false);
+  //const [showModal, setShowModal] = useState(false);
   const [render, setRender] = useState(false);
   const [totalPoints, setTotalPoints] = useState(0);
   const [amountPerPoint, setAmountPerPoint] = useState(0);
@@ -124,9 +124,9 @@ const CalculatePage = () => {
     setShowAddModal(null);
   };
 
-  const closeShowModalHandler = () => {
-    setShowModal((prev) => !prev);
-  };
+  // const closeShowModalHandler = () => {
+  //   setShowModal((prev) => !prev);
+  // };
 
   const tableRow =
     userData.length > 0 ? (
@@ -175,20 +175,20 @@ const CalculatePage = () => {
 
   return (
     <>
-      {showModal && (
+      {/* {showModal && (
         <Modal
           title={showModal.title}
           icon={showModal.icon}
           message={showModal.message}
           onCloseModal={closeShowModalHandler}
         />
-      )}
+      )} */}
 
       {showAddModal && (
         <AddModal
           setUserFormData={setUserData}
           onToast={toastModalHandler}
-          showModal={showModal}
+          // showModal={showModal}
           setRefetch={setRender}
           onCloseModal={closeShowAddModalHandler}
         />
